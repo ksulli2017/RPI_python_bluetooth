@@ -1,0 +1,11 @@
+
+#Put the helmet bluetooth MAC address, bluetooth port, a comma, and any information used to identify the player.
+#Separate each field with a comma.
+#The hciconfig can be run on the pi to display it's bluetooth MAC address.
+#B8:27:EB:C6:00:3F,3,Player 1
+#A4:34:D9:8E:EC:29,1,Player 1
+#A4:34:D9:8E:EC:29,1,Player 2
+#A4:34:D9:8E:EC:29,1,Player 3
+#B8:27:EB:C6:00:3F,1,Player4
+192.168.1.147,50000,Player 5
+
