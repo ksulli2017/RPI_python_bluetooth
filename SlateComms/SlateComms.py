@@ -50,6 +50,7 @@ while True:
             s = socket.socket(socket.AF_BLUETOOTH, socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
         else:
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
         #s.settimeout(5)
         port = int(port)
         DBG('Calling s.connect(%s, %d)'%(serverMacAddress,port))
@@ -64,6 +65,8 @@ while True:
         except Exception as e:
             DBG('Connection failed')
             pass
+
+    #s.close()
     DBG('Sleeping for %d seconds'%pollinginterval)
     time.sleep(pollinginterval) 
 
