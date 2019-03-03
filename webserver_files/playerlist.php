@@ -10,9 +10,7 @@
       header($refresh);
 
       $filename = "/var/www/html/tmp/playerlist.txt";
-      //clearstatcache();
       clearstatcache(TRUE, $filename);
-      echo "<p>Ask them about impact sensor</p>\r\n";
         
       $fsize=filesize($filename);
       if($filesize === 0)
@@ -27,7 +25,6 @@
       printf("<ol>", $tok);
       for($i = 0; $i < sizeof($lines); $i++){
       #for($i = 0; $i < sizeof($lines) - 1; $i++){
-      //while($tok !== false){
         $tok1 = strtok($lines[$i], ",");
         $tok2 = strtok(",");
         $tok3 = strtok(",");
